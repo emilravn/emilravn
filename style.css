@@ -9,7 +9,6 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   margin: 0px;
   padding: 0px;
-  min-height: 100vh;
 }
 
 *,
@@ -66,9 +65,97 @@ nav a:hover::before {
           transform: scaleX(1);
 }
 
+nav.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.flexbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.flexbox ul li {
+  margin-right: 20px;
+}
+
+nav.flexbox ul li:last-child {
+  margin-right: 0px;
+}
+
 #wrapper {
   text-align: justify;
   margin: 2em auto;
-  max-width: 800px;
+  max-width: 980px;
+  padding: 10px;
+}
+
+.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.whoiam {
+  width: 180x;
+  height: 180px;
+  border-radius: 100rem;
+}
+
+.darkBackground {
+  background-color: #191919;
+  color: white;
+  padding-bottom: 1rem;
+}
+
+.thinner {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.thin {
+  padding-top: 1rem;
+  font-size: 26px;
+  letter-spacing: 8px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.thinner {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.thinnest {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.flexskills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */

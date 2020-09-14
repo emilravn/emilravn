@@ -7,49 +7,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav id="navigationbar">
+    <nav class="flexbox">
+      <a href="#">Home</a>
       <ul>
-        <li><a href="#">Home</a></li>
         <li><a href="#">Projects</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
     <div id="wrapper">
       <header class="introduction">
-        <h1 class="introduction_title">Emil Ravn</h1>
-        <p class="introduction_paragraph">
-          Self-taught software and web developer through own research and project-based learning
-          with a goal of high quality results. Currently studying Information Technology (IT) at
-          Aalborg University on 5<sup>th</sup> Semester.
-        </p>
         <img class="whoiam" src="img/placeholder_of_me.jpg" alt="An image of me." />
+        <p class="introduction_paragraph">
+          Self-taught software and web developer through own research and project-based learning who
+          strives to pursue a career in software development. Currently studying Information
+          Technology (IT) 5<sup>th</sup> Semester at Aalborg University.
+        </p>
       </header>
-      <section class="skills">
-        <h2>Web and Software Development</h2>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>MySQL</li>
-          <li>PHP</li>
-          <li>C#</li>
-        </ul>
-        <h2>Technical Skills</h2>
-        <ul>
-          <li>Linux</li>
-          <li>Docker and Docker Swarm</li>
-          <li>Git</li>
-        </ul>
-      </section>
-      <section class="myprojects">
-        <p>Project One</p>
-        <p>Project Two</p>
-        <p>Project Three</p>
-      </section>
-      <footer class="footer_contact">
-        <p>Here you will be contacting me!</p>
-      </footer>
     </div>
+    <section class="darkBackground">
+      <div id="wrapper">
+        <h2 class="thin">My Skills</h2>
+        <div class="flexskills">
+          <div>
+            <h2 class="thinner">Web and Software Development</h2>
+            <p class="thinnest">HTML5, SCSS, JavaScript, MySQL, PHP, C#, OOP.</p>
+          </div>
+          <div>
+            <h2 class="thinner">Technical Skills</h2>
+            <p class="thinnest">Git, Linux, Ansible, Docker and Docker Swarm</p>
+          </div>
+          <div>
+            <h2 class="thinner">Other Skills</h2>
+            <p class="thinnest">Usability Evaluation, Helpdesk, IT-support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="myprojects">
+      <p>Project One</p>
+      <p>Project Two</p>
+      <p>Project Three</p>
+    </section>
+    <footer class="footer_contact">
+      <h3>CONTACT ME</h3>
+      <h3>STAY CONNECTED</h3>
+      <a href="https://github.com/emilravn" target="_blank">
+        <img alt="Visit my GitHub Profile" src="img/GitHub-Mark-32px.png" />
+      </a>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
