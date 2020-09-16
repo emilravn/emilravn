@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -19,6 +24,10 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 10px;
 }
 
@@ -102,6 +111,7 @@ nav a:hover::before {
   -ms-flex-align: center;
   align-items: center;
   gap: 2em;
+  margin-bottom: 25px;
 }
 
 .introduction_paragraph {
@@ -116,16 +126,19 @@ nav a:hover::before {
 }
 
 .darkBackground {
-  background-color: #161925;
+  background-color: #383e42;
   color: white;
-  padding-bottom: 5px;
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
 }
 
 .thin {
-  font-size: 32px;
+  font-size: 34px;
   letter-spacing: 8px;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
 }
 
 .thinner {
@@ -134,7 +147,7 @@ nav a:hover::before {
 }
 
 .thinnest {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 400;
   margin-left: 22px;
   padding: 0;
@@ -149,11 +162,21 @@ nav a:hover::before {
           justify-content: space-between;
 }
 
-.flexcontainer_skills li {
-  margin-top: 8px;
+.flexcontainer_skills a {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-@media (max-width: 1000px) {
+.flexcontainer_skills a:hover {
+  color: #c5c5c5;
+}
+
+.flexcontainer_skills li {
+  margin-top: 4px;
+}
+
+@media (max-width: 950px) {
   .flexcontainer_skills {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -164,7 +187,7 @@ nav a:hover::before {
   width: 30%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   .flexcontainer_skills .box-1 {
     width: 100%;
   }
@@ -174,7 +197,7 @@ nav a:hover::before {
   width: 30%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   .flexcontainer_skills .box-2 {
     width: 100%;
   }
@@ -184,7 +207,7 @@ nav a:hover::before {
   width: 30%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   .flexcontainer_skills .box-3 {
     width: 100%;
   }

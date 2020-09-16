@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+// General styling applied to the page structure.
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -17,7 +24,15 @@ body {
   box-sizing: inherit;
 }
 
+// END
+
+// CSS applied to navigation.
+
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 10px;
 
   @media (min-width: 600px) {
@@ -76,6 +91,10 @@ nav {
   }
 }
 
+// END
+
+// Main Content CSS
+
 #wrapper {
   margin: 2em auto;
   max-width: 1080px;
@@ -90,6 +109,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   gap: 2em;
+  margin-bottom: 25px;
 }
 
 .introduction_paragraph {
@@ -104,16 +124,19 @@ nav {
 }
 
 .darkBackground {
-  background-color: #161925;
+  background-color: #383e42;
   color: white;
-  padding-bottom: 5px;
+  margin: 0 -9999rem;
+  /* add back negative margin value */
+  padding: 0.25rem 9999rem;
 }
 
 .thin {
-  font-size: 32px;
+  font-size: 34px;
   letter-spacing: 8px;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
 }
 
 .thinner {
@@ -122,7 +145,7 @@ nav {
 }
 
 .thinnest {
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 400;
   margin-left: 22px;
   padding: 0;
@@ -132,18 +155,27 @@ nav {
   display: flex;
   justify-content: space-between;
 
-  li {
-    margin-top: 8px;
+  a {
+    color: white;
+    transition: 0.3s;
   }
 
-  @media (max-width: 1000px) {
+  a:hover {
+    color: rgb(197, 197, 197);
+  }
+
+  li {
+    margin-top: 4px;
+  }
+
+  @media (max-width: 950px) {
     flex-wrap: wrap;
   }
 
   .box-1 {
     width: 30%;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 950px) {
       width: 100%;
     }
   }
@@ -151,7 +183,7 @@ nav {
   .box-2 {
     width: 30%;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 950px) {
       width: 100%;
     }
   }
@@ -159,7 +191,7 @@ nav {
   .box-3 {
     width: 30%;
 
-    @media (max-width: 1000px) {
+    @media (max-width: 950px) {
       width: 100%;
     }
   }
