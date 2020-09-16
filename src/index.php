@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -42,10 +43,10 @@
             <div class="box-2">
               <h2 class="thinner">Tech Skills</h2>
               <ul class="thinnest">
-                <li>Version Control with Git alongside GitHub.</li>
-                <li>Experienced in Linux and the use of the CLI.</li>
-                <li>Configuration Management in Ansible.</li>
+                <li>Experience with Linux and the use of the CLI.</li>
                 <li>Docker and Docker Swarm.</li>
+                <li>Configuration Management in Ansible.</li>
+                <li>Version Control with Git alongside GitHub.</li>
               </ul>
             </div>
             <div class="box-3">
@@ -58,20 +59,17 @@
           </div>
         </div>
       </section>
-      <section class="myprojects">
-        <p>Project One</p>
-        <p>Project Two</p>
-        <p>Project Three</p>
-      </section>
-      <h3>CONTACT ME</h3>
-      <footer class="footer_contact">
-        <h3>STAY CONNECTED</h3>
+      <section class="myprojects"></section>
+      <div id="contactform">
+        <h3>CONTACT ME</h3>
+      </div>
+      <footer id="footer">
+        <h3>Stay Connected</h3>
         <a href="https://github.com/emilravn" target="_blank">
           <img alt="Visit my GitHub Profile" src="img/GitHub-Mark-32px.png" />
         </a>
       </footer>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
