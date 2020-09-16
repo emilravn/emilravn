@@ -65,40 +65,33 @@ nav a:hover::before {
           transform: scaleX(1);
 }
 
-nav.flexbox {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-nav.flexbox ul {
+.navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-nav.flexbox ul li {
-  margin-right: 20px;
+.navbar ul li {
+  margin-right: 25px;
 }
 
-nav.flexbox ul li:last-child {
+.navbar ul li:last-child {
   margin-right: 0px;
 }
 
 #wrapper {
-  text-align: justify;
   margin: 2em auto;
-  max-width: 980px;
-  padding: 10px;
+  max-width: 1080px;
+  padding: 30px;
 }
 
 .introduction {
@@ -111,51 +104,89 @@ nav.flexbox ul li:last-child {
   gap: 2em;
 }
 
+.introduction_paragraph {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
 .whoiam {
-  width: 180x;
-  height: 180px;
-  border-radius: 100rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 6em;
 }
 
 .darkBackground {
-  background-color: #191919;
+  background-color: #161925;
   color: white;
-  padding-bottom: 1rem;
-}
-
-.thinner {
-  font-size: 18px;
-  font-weight: 500;
+  padding-bottom: 5px;
 }
 
 .thin {
-  padding-top: 1rem;
-  font-size: 26px;
+  font-size: 32px;
   letter-spacing: 8px;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
 .thinner {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .thinnest {
   font-size: 13px;
   font-weight: 400;
-  margin: 0;
+  margin-left: 22px;
   padding: 0;
 }
 
-.flexskills {
+.flexcontainer_skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+.flexcontainer_skills li {
+  margin-top: 8px;
+}
+
+@media (max-width: 1000px) {
+  .flexcontainer_skills {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.flexcontainer_skills .box-1 {
+  width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .flexcontainer_skills .box-1 {
+    width: 100%;
+  }
+}
+
+.flexcontainer_skills .box-2 {
+  width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .flexcontainer_skills .box-2 {
+    width: 100%;
+  }
+}
+
+.flexcontainer_skills .box-3 {
+  width: 30%;
+}
+
+@media (max-width: 1000px) {
+  .flexcontainer_skills .box-3 {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
