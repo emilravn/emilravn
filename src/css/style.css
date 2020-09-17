@@ -97,13 +97,7 @@ nav a:hover::before {
   margin-right: 0px;
 }
 
-#wrapper {
-  margin: 2em auto;
-  max-width: 1080px;
-  padding: 30px;
-}
-
-.introduction {
+#introduction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,15 +108,21 @@ nav a:hover::before {
   margin-bottom: 25px;
 }
 
-.introduction_paragraph {
+#portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 6em;
+}
+
+#intro_paragraph {
   font-size: 17px;
   line-height: 1.5;
 }
 
-.whoiam {
-  width: 200px;
-  height: 200px;
-  border-radius: 6em;
+#wrapper {
+  margin: 2em auto;
+  max-width: 1080px;
+  padding: 30px;
 }
 
 .darkBackground {
@@ -133,7 +133,7 @@ nav a:hover::before {
   padding: 0.25rem 9999rem;
 }
 
-.thin {
+.heading_spaced {
   font-size: 34px;
   letter-spacing: 8px;
   font-weight: 300;
@@ -141,19 +141,19 @@ nav a:hover::before {
   margin: 0px 0px 20px 0px;
 }
 
-.thinner {
+.subject_title {
   font-size: 18px;
   font-weight: 600;
 }
 
-.thinnest {
+.paragraph_text {
   font-size: 13.5px;
   font-weight: 400;
   margin-left: 22px;
   padding: 0;
 }
 
-.flexcontainer_skills {
+.flexbox_skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,53 +162,53 @@ nav a:hover::before {
           justify-content: space-between;
 }
 
-.flexcontainer_skills a {
+.flexbox_skills a {
   color: white;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.flexcontainer_skills a:hover {
+.flexbox_skills a:hover {
   color: #c5c5c5;
 }
 
-.flexcontainer_skills li {
+.flexbox_skills li {
   margin-top: 4px;
 }
 
 @media (max-width: 950px) {
-  .flexcontainer_skills {
+  .flexbox_skills {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 }
 
-.flexcontainer_skills .box-1 {
+.flexbox_skills .box-1 {
   width: 30%;
 }
 
 @media (max-width: 950px) {
-  .flexcontainer_skills .box-1 {
+  .flexbox_skills .box-1 {
     width: 100%;
   }
 }
 
-.flexcontainer_skills .box-2 {
+.flexbox_skills .box-2 {
   width: 30%;
 }
 
 @media (max-width: 950px) {
-  .flexcontainer_skills .box-2 {
+  .flexbox_skills .box-2 {
     width: 100%;
   }
 }
 
-.flexcontainer_skills .box-3 {
+.flexbox_skills .box-3 {
   width: 30%;
 }
 
 @media (max-width: 950px) {
-  .flexcontainer_skills .box-3 {
+  .flexbox_skills .box-3 {
     width: 100%;
   }
 }

@@ -95,13 +95,7 @@ nav {
 
 // Main Content CSS
 
-#wrapper {
-  margin: 2em auto;
-  max-width: 1080px;
-  padding: 30px;
-}
-
-.introduction {
+#introduction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,15 +106,21 @@ nav {
   margin-bottom: 25px;
 }
 
-.introduction_paragraph {
+#portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 6em;
+}
+
+#intro_paragraph {
   font-size: 17px;
   line-height: 1.5;
 }
 
-.whoiam {
-  width: 200px;
-  height: 200px;
-  border-radius: 6em;
+#wrapper {
+  margin: 2em auto;
+  max-width: 1080px;
+  padding: 30px;
 }
 
 .darkBackground {
@@ -131,7 +131,7 @@ nav {
   padding: 0.25rem 9999rem;
 }
 
-.thin {
+.heading_spaced {
   font-size: 34px;
   letter-spacing: 8px;
   font-weight: 300;
@@ -139,19 +139,19 @@ nav {
   margin: 0px 0px 20px 0px;
 }
 
-.thinner {
+.subject_title {
   font-size: 18px;
   font-weight: 600;
 }
 
-.thinnest {
+.paragraph_text {
   font-size: 13.5px;
   font-weight: 400;
   margin-left: 22px;
   padding: 0;
 }
 
-.flexcontainer_skills {
+.flexbox_skills {
   display: flex;
   justify-content: space-between;
 

@@ -1,6 +1,6 @@
 # My Personal Website
 
-Site built with
+Site built with HTML5, CSS, JavaScript, PHP and Docker.
 
 ## How to run locally
 

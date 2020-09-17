@@ -16,9 +16,9 @@
       </ul>
     </nav>
     <div id="wrapper">
-      <header class="introduction">
-        <img class="whoiam" src="img/placeholder_of_me.jpg" alt="An image of me." />
-        <p class="introduction_paragraph">
+      <header id="introduction">
+        <img id="portrait" src="img/placeholder_of_me.jpg" alt="An image of me." />
+        <p id="intro_paragraph">
           Self-taught software and web developer through own research and project-based learning who
           strives to pursue a career in software development. Currently studying Information
           Technology 5<sup>th</sup> semester at Aalborg University.
@@ -26,32 +26,32 @@
       </header>
       <section class="darkBackground">
         <div id="wrapper">
-          <h2 class="thin">My Skills</h2>
-          <div class="flexcontainer_skills">
+          <h2 class="heading_spaced">My Skills</h2>
+          <div class="flexbox_skills">
             <div class="box-1">
-              <h2 class="thinner">Software Development</h2>
-              <ul class="thinnest">
+              <h2 class="subject_title">Software Development</h2>
+              <ul class="paragraph_text">
                 <li>
                   Website seen live at
                   <a href="https://www.cafefrederiksberg.dk/" target="_blank">Café Frederiksberg</a>
                   created with HTML5, CSS, JavaScript, MySQL & PHP.
                 </li>
                 <li>Yatzhee made as a console application in C# with OOP.</li>
-                <li>More projects can be seen on my GitHub.</li>
+                <li>More projects can be seen on my <a href="https://github.com/emilravn" target="_blank">GitHub</a></li>
               </ul>
             </div>
             <div class="box-2">
-              <h2 class="thinner">Tech Skills</h2>
-              <ul class="thinnest">
+              <h2 class="subject_title">Tech Skills</h2>
+              <ul class="paragraph_text">
                 <li>Experience with Linux and the use of the CLI.</li>
                 <li>Docker and Docker Swarm.</li>
                 <li>Configuration Management in Ansible.</li>
-                <li>Version Control with Git alongside GitHub.</li>
+                <li>Version Control with Git.</li>
               </ul>
             </div>
             <div class="box-3">
-              <h2 class="thinner">Other Endeavours</h2>
-              <ul class="thinnest">
+              <h2 class="subject_title">Other Endeavours</h2>
+              <ul class="paragraph_text">
                 <li>I like to play with microcomputers such as the Raspberry Pi.</li>
                 <li>Knowledge in evaluation of usability in products.</li>
               </ul>
