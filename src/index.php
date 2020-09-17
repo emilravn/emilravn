@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>emilravn.io</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body>
     <nav class="navbar">
@@ -65,9 +65,11 @@
       </div>
       <footer id="footer">
         <h3>Stay Connected</h3>
-        <a href="https://github.com/emilravn" target="_blank">
-          <img alt="Visit my GitHub Profile" src="img/GitHub-Mark-32px.png" />
+        <a class="img-link" href="https://github.com/emilravn" target="_blank">
+          <img id="githublogo" alt="Visit my GitHub Profile" src="img/github_logo_big.png" />
         </a>
+        <a class="img-link" href="https://www.linkedin.com/in/emil-ravn-b4a778173" target="_blank">
+          <img id="linkedinlogo" alt="Visit my LinkedIn Profile" src="img/linkedin_logo.png" />
       </footer>
     </div>
     <script src="script.js"></script>

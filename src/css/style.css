@@ -219,4 +219,20 @@ nav a:hover::before {
   font-weight: lighter;
   text-align: center;
 }
+
+a.img-link {
+  text-decoration: none;
+}
+
+#githublogo {
+  max-width: 32px;
+  max-height: 32px;
+  margin-right: 10px;
+}
+
+#linkedinlogo {
+  margin-left: 10px;
+  width: 37.64px;
+  height: 32px;
+}
 /*# sourceMappingURL=style.css.map */
