@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <a href="#">Home</a>
+  <nav>
+    <a href="#">About</a>
     <ul>
       <li><a href="#">Projects</a></li>
       <li><a href="#">Contact</a></li>
@@ -59,7 +59,15 @@
     </section>
     <section class="myprojects"></section>
     <div id="contactform">
-      <h3>Contact Me</h3>
+      <p>Contact Me</p>
+      <form class"contact-form" action="contactform.php" method="post">
+        <input type="text" name="name" placeholder="Full Name">
+        <input type="text" name="mail" placeholder="Your E-mail">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" name="submit">Send</button>
+      </form>
+
     </div>
     <footer id="footer">
       <h3>Stay Connected</h3>

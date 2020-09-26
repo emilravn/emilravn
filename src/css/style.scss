@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
-// General styling applied to the page structure.
-
 html,
 body {
   overflow-x: hidden;
@@ -24,30 +22,31 @@ body {
   box-sizing: inherit;
 }
 
-// END
-
-// CSS applied to navigation.
-
 nav {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   padding: 10px;
-
-  @media (min-width: 600px) {
-    padding: 20px;
-  }
+  background-color: #f7f7f7;
 
   ul {
+    display: flex;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    li {
+      margin-right: 25px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
   }
 
   a {
+    font-size: 15px;
     position: relative;
-    color: #000;
+    color: #585858;
     text-decoration: none;
   }
 
@@ -74,26 +73,11 @@ nav {
   }
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-
-  ul {
-    display: flex;
-  }
-
-  ul li {
-    margin-right: 25px;
-
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
+#main-container {
+  margin: 2em auto;
+  max-width: 1080px;
+  padding: 30px;
 }
-
-// END
-
-// Main Content CSS
 
 #introduction {
   display: -webkit-box;
@@ -103,7 +87,7 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   gap: 2em;
-  margin-bottom: 25px;
+  padding: 50px 0px;
 }
 
 #portrait {
@@ -113,14 +97,8 @@ nav {
 }
 
 #intro_paragraph {
-  font-size: 17px;
-  line-height: 1.5;
-}
-
-#main-container {
-  margin: 2em auto;
-  max-width: 1080px;
-  padding: 30px;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 .darkrow {
@@ -129,23 +107,24 @@ nav {
   margin: 0 -9999rem;
   /* add back negative margin value */
   padding: 0.25rem 9999rem;
+  padding-bottom: 25px;
 }
 
 .heading_spaced {
-  font-size: 34px;
-  letter-spacing: 8px;
+  font-size: 36px;
+  letter-spacing: 10px;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 0px 0px 20px 0px;
+  margin-bottom: 0px;
 }
 
 .subject_title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
 }
 
 .paragraph_text {
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 400;
   margin-left: 22px;
   padding: 0;
