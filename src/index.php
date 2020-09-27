@@ -1,5 +1,26 @@
 <?php
+$message_sent = false;
+if (isset($POST['email']) && $POST['email'] != '') {
 
+  if (filter_var($POST['email'], FILTER_VALIDATE_EMAIL)) {
+    // submit form
+    $userName = $POST['name'];
+    $userEmail = $POST['email'];
+    $subject = $POST['subject'];
+    $message = $POST['message'];
+
+    $to = "emilravn@outlook.com";
+    $body = "";
+
+    $body .= "From: " . $userName . "\r\n";
+    $body .= "Email: " . $userEmail . "\r\n";
+    $body .= "Message: " . $message . "\r\n";
+
+    mail($to, $subject, $body);
+
+    $message_sent = true;
+  }
+}
 ?>
 
 <html lang="en">
@@ -63,30 +84,42 @@
       </div>
     </section>
     <section class="myprojects"></section>
-    <div id="contactform">
-      <h1>Contact Me</h1>
-      <form action="webform.php" method="POST" class="form">
-        <div class="form-group">
-          <label for="name" class="form-label">Your Name</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1" required>
-        </div>
-        <div class="form-group">
-          <label for="email" class="form-label">Your Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="2" required>
-        </div>
-        <div class="form-group">
-          <label for="subject" class="form-label">Subject</label>
-          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3" required>
-        </div>
-        <div class="form-group">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Message" tabindex="4"></textarea>
-        </div>
-        <div>
-          <button type="submit" class="btn">Submit</button>
-        </div>
-      </form>
-    </div>
+    <?php
+    if ($message_sent) :
+    ?>
+
+      <h1>Your message has been sent! Thanks!</h1>
+
+    <?php
+    else :
+    ?>
+      <div id="contactform">
+        <h1>Contact Me</h1>
+        <form action="index.php" method="POST" class="form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="2" required>
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Message" tabindex="4"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    <?php
+    endif;
+    ?>
     <footer id="footer">
       <h3>Stay Connected</h3>
       <a class="img-link" href="https://github.com/emilravn" target="_blank">
