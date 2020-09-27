@@ -4,14 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>emilravn.io</title>
+  <title>Emil Ravn</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
+  <a class="burger-nav"></a>
   <nav>
-    <a href="#">About</a>
     <ul>
+      <li><a href="#">Emil Ravn</a></li>
       <li><a href="#">Projects</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
@@ -78,6 +79,7 @@
         <img id="linkedinlogo" alt="Visit my LinkedIn Profile" src="img/linkedin_logo.png" />
     </footer>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="script.js"></script>
 </body>
 
