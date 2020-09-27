@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+
+?>
+
 <html lang="en">
 
 <head>
@@ -23,7 +26,8 @@
       <p id="intro_paragraph">
         Self-taught software and web developer through own research and project-based learning who
         strives to pursue a career in software development. Currently studying Information
-        Technology 5<sup>th</sup> semester at Aalborg University. </p>
+        Technology 5<sup>th</sup> semester at Aalborg University.
+      </p>
     </header>
     <section class="darkrow">
       <h2 class="heading_spaced">My Skills</h2>
@@ -60,15 +64,28 @@
     </section>
     <section class="myprojects"></section>
     <div id="contactform">
-      <p>Contact Me</p>
-      <form class"contact-form" action="contactform.php" method="post">
-        <input type="text" name="name" placeholder="Full Name">
-        <input type="text" name="mail" placeholder="Your E-mail">
-        <input type="text" name="subject" placeholder="Subject">
-        <textarea name="message" placeholder="Message"></textarea>
-        <button type="submit" name="submit">Send</button>
+      <h1>Contact Me</h1>
+      <form action="webform.php" method="POST" class="form">
+        <div class="form-group">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name" tabindex="1" required>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">Your Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" tabindex="2" required>
+        </div>
+        <div class="form-group">
+          <label for="subject" class="form-label">Subject</label>
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" tabindex="3" required>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Message" tabindex="4"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn">Submit</button>
+        </div>
       </form>
-
     </div>
     <footer id="footer">
       <h3>Stay Connected</h3>

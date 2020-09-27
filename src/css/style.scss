@@ -66,7 +66,7 @@ nav {
       }
 
       &:first-child {
-        flex-grow: 1;
+        flex-grow: 2;
       }
     }
   }
@@ -115,7 +115,7 @@ nav {
 #main-container {
   margin: 2em auto;
   max-width: 1080px;
-  padding: 30px;
+  padding: 30px 30px 0px 30px;
 }
 
 #introduction {
@@ -127,17 +127,32 @@ nav {
   align-items: center;
   gap: 2em;
   padding: 50px 0px;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 #portrait {
   width: 200px;
   height: 200px;
   border-radius: 6em;
+
+  @media (max-width: 480px) {
+    width: 300px;
+    height: 300px;
+    border-radius: 12em;
+  }
 }
 
 #intro_paragraph {
   font-size: 16px;
   line-height: 1.8;
+  @media (max-width: 480px) {
+    margin-top: 0px;
+  }
 }
 
 .darkrow {
@@ -216,6 +231,7 @@ nav {
 }
 
 #footer {
+  margin-top: 3rem;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: lighter;
@@ -236,4 +252,83 @@ a.img-link {
   margin-left: 10px;
   width: 37.64px;
   height: 32px;
+}
+
+#contactform {
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  background-color: #fff;
+  padding: 2em;
+  margin-top: 2em;
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .form-group {
+    margin-bottom: 1.5em;
+    transition: all 0.3s;
+  }
+
+  .form-label {
+    font-size: 0.75em;
+    color: var(--font-color);
+    display: block;
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateX(-50px);
+  }
+  .form-control {
+    box-shadow: none;
+    border-radius: 0;
+    border-color: #ccc;
+    border-style: none none solid none;
+    width: 100%;
+    font-size: 1.25em;
+    transition: all 0.6s;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  }
+  .form-control::placeholder {
+    color: #aaa;
+  }
+  .form-control:focus {
+    box-shadow: none;
+    border-color: var(--font-hover-color);
+    outline: none;
+  }
+  .form-group:focus-within {
+    transform: scale(1.02, 1.02);
+  }
+
+  .form-control:invalid:focus {
+    border-color: red;
+  }
+  .form-control:valid:focus {
+    border-color: green;
+  }
+
+  .btn {
+    background-color: #383e42;
+    border-color: #343a40;
+    color: white;
+    padding: 7px 14px;
+    border: 1px solid transparent;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #383e42ea;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .focused > .form-label {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
