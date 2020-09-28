@@ -12,9 +12,9 @@
   <a class="burger-nav"></a>
   <nav>
     <ul>
-      <li><a href="#">Emil Ravn</a></li>
+      <li><a href="#top">Emil Ravn</a></li>
       <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#contactform">Contact</a></li>
     </ul>
   </nav>
   <div id="main-container">
@@ -27,11 +27,15 @@
       </p>
     </header>
     <section class="darkrow">
-      <h2 class="heading_spaced">My Skills</h2>
+      <h2 class="heading_spaced">A little bit about me...</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fuga illo animi voluptates maxime rerum asperiores, a voluptatem alias vero totam. Ex amet sint at esse repudiandae repellat reprehenderit numquam.
+      At incidunt dolore veritatis assumenda! Labore suscipit est a, alias neque enim qui necessitatibus, ad excepturi nulla perspiciatis modi, corporis ipsam cupiditate tenetur doloribus sit minima reiciendis placeat consequuntur expedita!
+      Quis adipisci rerum consectetur accusamus ut distinctio sequi laborum fugiat nihil pariatur? Ipsa voluptatum maxime reiciendis veniam, quod dolorum saepe non, consectetur quaerat, nemo obcaecati voluptatibus autem necessitatibus excepturi esse.</p>
       <div class="flexbox_skills">
         <div class="box-1">
           <h2 class="subject_title">Software Development</h2>
           <ul class="paragraph_text">
+        
             <li>
               Website seen live at
               <a href="https://www.cafefrederiksberg.dk/" target="_blank">Café Frederiksberg</a>
@@ -42,9 +46,9 @@
           </ul>
         </div>
         <div class="box-2">
-          <h2 class="subject_title">Tech Skills</h2>
+          <h2 class="subject_title">Technical Skills</h2>
           <ul class="paragraph_text">
-            <li>Experience with Linux and the use of the CLI.</li>
+            <li>The Linux OS and CLI.</li>
             <li>Docker and Docker Swarm.</li>
             <li>Configuration Management in Ansible.</li>
             <li>Version Control with Git.</li>
@@ -53,8 +57,9 @@
         <div class="box-3">
           <h2 class="subject_title">Other Endeavours</h2>
           <ul class="paragraph_text">
-            <li>I like to play with microcomputers such as the Raspberry Pi.</li>
+            <li>I like to play with microcomputers such as the Raspberry Pi. Infact it is said that this website is hosted on one!</li>
             <li>Knowledge in evaluation of usability in products.</li>
+            <li>UI design with Adobe XD and Photoshop.</li>
           </ul>
         </div>
       </div>

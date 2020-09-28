@@ -12,8 +12,8 @@ html {
 
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 *,
@@ -25,7 +25,10 @@ body {
 nav ul.open {
   height: auto;
   background-color: #f7f7f7;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
+  position: absolute;
+  top: 40px;
+  width: 100%;
 }
 
 nav {
@@ -72,7 +75,7 @@ nav {
   }
 
   a {
-    font-size: 15px;
+    font-size: 16px;
     position: relative;
     color: #585858;
     text-decoration: none;
@@ -109,6 +112,7 @@ nav {
     background: url(../img/menu.svg) no-repeat 98% center;
     background-color: #f7f7f7;
     cursor: pointer;
+    position: fixed;
   }
 }
 
@@ -148,7 +152,7 @@ nav {
 }
 
 #intro_paragraph {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.8;
   @media (max-width: 480px) {
     margin-top: 0px;
@@ -165,20 +169,20 @@ nav {
 }
 
 .heading_spaced {
-  font-size: 36px;
+  font-size: 38px;
   letter-spacing: 10px;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 0px;
+  margin-bottom: 2rem;
 }
 
 .subject_title {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .paragraph_text {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   margin-left: 22px;
   padding: 0;
