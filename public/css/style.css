@@ -277,14 +277,6 @@ nav a:hover::before {
   }
 }
 
-#myprojects {
-  background-color: red;
-  text-align: center;
-  color: white;
-  font-size: 18px;
-  padding: 50px 0px;
-}
-
 #footer {
   margin-top: 3rem;
   text-transform: uppercase;
@@ -307,6 +299,16 @@ a.img-link {
   margin-left: 10px;
   width: 37.64px;
   height: 32px;
+}
+
+.company_logo {
+  width: 20%;
+  height: auto;
+}
+
+.product_screengrab {
+  width: 100%;
+  height: auto;
 }
 
 #contactform {
