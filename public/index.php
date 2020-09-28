@@ -13,7 +13,7 @@
   <nav>
     <ul>
       <li><a href="#top">Emil Ravn</a></li>
-      <li><a href="#">Projects</a></li>
+      <li><a href="#myprojects">Projects</a></li>
       <li><a href="#contactform">Contact</a></li>
     </ul>
   </nav>
@@ -21,8 +21,8 @@
     <header id="introduction">
       <img id="portrait" src="img/placeholder_of_me.jpg" alt="An image of me." />
       <p id="intro_paragraph">
-        Self-taught software and web developer through own research and project-based learning who
-        strives to pursue a career in software development. Currently studying Information
+        Self-taught web and software developer through own research and project-based learning who
+        enjoys to build and explore using all sorts of technologies. Currently undergoing a Bachelor's Degree in Information
         Technology 5<sup>th</sup> semester at Aalborg University.
       </p>
     </header>
@@ -48,10 +48,9 @@
         <div class="box-2">
           <h2 class="subject_title">Technical Skills</h2>
           <ul class="paragraph_text">
-            <li>The Linux OS and CLI.</li>
-            <li>Docker and Docker Swarm.</li>
-            <li>Configuration Management in Ansible.</li>
-            <li>Version Control with Git.</li>
+            <li>Experience with Linux OS and the CLI.</li>
+            <li>Virtualization/containerization with Docker and Docker Swarm.</li>
+            <li>Configuration Management with Ansible.</li>
           </ul>
         </div>
         <div class="box-3">
@@ -64,7 +63,9 @@
         </div>
       </div>
     </section>
-    <section class="myprojects"></section>
+    <section id="myprojects">
+      <p>Here goes the projects.</p>
+    </section>
       <div id="contactform">
         <h1>Contact Me</h1>
         <form action="index.php" method="POST" class="form">
