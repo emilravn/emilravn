@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Emil Ravn's Portfolio Website showcasing projects and skills">
   <title>Emil Ravn</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -19,12 +20,15 @@
   </nav>
   <div id="main-container">
     <header id="introduction">
-      <img id="portrait" src="img/placeholder_of_me.jpg" alt="An image of me." />
-      <p id="intro_paragraph">
-        Self-taught web and software developer through own research and project-based learning who
-        enjoys to build and explore using all sorts of technologies. Currently undergoing a Bachelor's Degree in Information
-        Technology 5<sup>th</sup> semester at Aalborg University.
-      </p>
+      <div class="flex-row"><img id="portrait" src="img/placeholder_of_me.jpg" alt="An image of me." /></div>
+      <div class="flex-column">
+        <p id="intro_paragraph">
+          Self-taught web and software developer through own research and project-based learning who
+          enjoys to build and explore using all sorts of technologies. Currently undergoing a Bachelor's Degree in Information
+          Technology 5<sup>th</sup> semester at Aalborg University.
+        </p>
+        <p id="intro_name"><cite>... Emil Ravn</cite></p>
+      </div>
     </header>
     <section class="darkrow">
       <h2 class="heading_spaced">A little about me...</h2>
@@ -34,11 +38,11 @@
           <ul class="paragraph_text">
             <li>
               Website seen live at
-              <a href="https://www.cafefrederiksberg.dk/" target="_blank">Café Frederiksberg</a>
+              <a href="https://www.cafefrederiksberg.dk/" rel="noopener" target="_blank">Café Frederiksberg</a>
               created with HTML5, CSS, JavaScript, MySQL & PHP.
             </li>
             <li>Yatzhee made as a console application in C# with OOP.</li>
-            <li>More projects can be seen on my <a href="https://github.com/emilravn" target="_blank">GitHub</a></li>
+            <li>More projects can be seen on my <a href="https://github.com/emilravn" rel="noopener" target="_blank">GitHub</a></li>
           </ul>
         </div>
         <div class="box-2">
@@ -90,7 +94,7 @@
           <img class="company_logo" src="img/projects/cf_logo.svg" alt="The Company Logo of Café Frederiksberg">
           <p>Project at Information Technology (IT) at Aalborg University for 1st Semester. A website created for a local business in Aalborg with a CMS established on the ground on requirements gathering and generation.
             The goal was to make an IT-system that effectively communicated Café Frederiksbergs identity.</p>
-          <a class="seemore" href="https://github.com/simoneliasen/cafefrederiksberg" target="_blank">See More</a>
+          <a class="seemore" href="https://github.com/simoneliasen/cafefrederiksberg" rel="noopener" target="_blank">See More</a>
         </div>
       </div>
       <div class="grid-container">
@@ -104,8 +108,8 @@
         </div>
         <div class="description">
           <h2 class="company_logo">Yatzhee</h2>
-          <p>As part of an exam in Object Oriented Programming at Aalborg University; I was tasked with creating a Yatzhee console application. It was developed using OOP in C# with an effort on easily readible and maintable code. The game can be played single-player only and features all the necessary core concepts found in a game of real game of Yatzhee.</p>
-          <a class="seemore" href="https://github.com/emilravn/yatzhee" target="_blank">See More</a>
+          <p>As part of an exam in Object Oriented Programming at Aalborg University, I was tasked with creating a game of Yatzhee as a console application. It was developed using OOP in C# with an effort on easily readible and maintable code. The game can be played single-player only and features all the necessary core concepts found in a game of real game of Yatzhee.</p>
+          <a class="seemore" href="https://github.com/emilravn/yatzhee" rel="noopener" target="_blank">See More</a>
         </div>
       </div>
     </section>
@@ -135,10 +139,10 @@
     </div>
     <footer id="footer">
       <h3>Stay Connected</h3>
-      <a class="img-link" href="https://github.com/emilravn" target="_blank">
+      <a class="img-link" href="https://github.com/emilravn" rel="noopener" target="_blank">
         <img id="githublogo" alt="Visit my GitHub Profile" src="img/github_logo_big.png" />
       </a>
-      <a class="img-link" href="https://www.linkedin.com/in/emil-ravn-b4a778173" target="_blank">
+      <a class="img-link" href="https://www.linkedin.com/in/emil-ravn-b4a778173" rel="noopener" target="_blank">
         <img id="linkedinlogo" alt="Visit my LinkedIn Profile" src="img/linkedin_logo.png" />
     </footer>
   </div>

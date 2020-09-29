@@ -37,8 +37,6 @@ nav {
   position: fixed;
   width: 100%;
   padding: 10px;
-  background-color: #f7f7f7;
-  // consider changing to ##BC9B78
 
   @media (max-width: 950px) {
     padding: 0px;
@@ -164,6 +162,10 @@ nav {
   }
 }
 
+#intro_name {
+  padding-left: 2em;
+}
+
 .darkrow {
   background-color: #383e42;
   color: white;
@@ -239,29 +241,7 @@ nav {
   }
 }
 
-#footer {
-  margin-top: 3rem;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: lighter;
-  text-align: center;
-}
-
-a.img-link {
-  text-decoration: none;
-}
-
-#githublogo {
-  max-width: 32px;
-  max-height: 32px;
-  margin-right: 10px;
-}
-
-#linkedinlogo {
-  margin-left: 10px;
-  width: 37.64px;
-  height: 32px;
-}
+// Project section below this line
 
 #myprojects {
   margin: 50px 0px;
@@ -274,6 +254,7 @@ a.img-link {
 }
 
 .grid-container {
+  margin-top: 2em;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   grid-template-rows: 1fr 1.5fr;
@@ -354,11 +335,13 @@ a.img-link {
   margin-top: 1em;
 }
 
+// Contactform below this line //
+
 #contactform {
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   background-color: #fff;
   padding: 1em 2em;
-  margin-top: 2em;
+  margin-bottom: 2em;
 
   h1 {
     font-size: 24px;
@@ -432,5 +415,31 @@ a.img-link {
   .focused > .form-label {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+// Footer below this line
+
+#footer {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+
+  a.img-link {
+    text-decoration: none;
+  }
+
+  #githublogo {
+    max-width: 32px;
+    max-height: 32px;
+    margin-right: 10px;
+  }
+
+  #linkedinlogo {
+    margin-left: 10px;
+    width: 37.64px;
+    height: 32px;
   }
 }
