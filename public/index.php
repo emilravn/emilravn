@@ -94,7 +94,7 @@
         </div>
       </div>
       <div class="grid-container">
-        <div class="image"><video autoplay class="product_screengrab" src="videos/yatzhee_demonstration.mp4" alt="A video of my Yatzhee program."></video>
+        <div class="image"><video autoplay controls class="product_screengrab" src="videos/yatzhee_demonstration.mp4" alt="A video of my Yatzhee program."></video>
           <div id="technologies">
             <div class="language">
               <img class="language-icon-size" src="img/language_icons/csharp.svg" alt="Icon of HTML5">
