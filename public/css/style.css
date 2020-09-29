@@ -15,6 +15,7 @@ body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  color: #454545;
 }
 
 *,
@@ -40,7 +41,7 @@ nav {
   background-color: #f7f7f7;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
   nav {
     padding: 0px;
   }
@@ -58,7 +59,7 @@ nav ul {
   padding: 0px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
   nav ul {
     overflow: hidden;
     display: block;
@@ -72,7 +73,7 @@ nav ul li {
   margin-right: 25px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
   nav ul li {
     margin: unset;
     margin-bottom: 10px;
@@ -121,7 +122,7 @@ nav a:hover::before {
           transform: scaleX(1);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
   .burger-nav {
     display: block;
     height: 50px;
@@ -149,7 +150,7 @@ nav a:hover::before {
   padding: 50px 0px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
   #introduction {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -161,12 +162,12 @@ nav a:hover::before {
 }
 
 #portrait {
-  width: 200px;
-  height: 200px;
-  border-radius: 6em;
+  width: 250px;
+  height: 250px;
+  border-radius: 10em;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
   #portrait {
     width: 300px;
     height: 300px;
@@ -181,7 +182,7 @@ nav a:hover::before {
   padding-left: 2em;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
   #intro_paragraph {
     margin-top: 0px;
     padding-top: 1em;
@@ -302,13 +303,123 @@ a.img-link {
 }
 
 .company_logo {
-  width: 20%;
+  max-width: 250px;
   height: auto;
 }
 
 .product_screengrab {
   width: 100%;
   height: auto;
+  border-radius: 5px;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  -ms-grid-rows: 1fr 1.5fr;
+      grid-template-rows: 1fr 1.5fr;
+  gap: 1px 1px;
+      grid-template-areas: "description image" "description image";
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #e2e2e2;
+}
+
+@media (max-width: 950px) {
+  .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grid-container .company_logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 2em;
+  }
+  .grid-container .image {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .grid-container .description {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: image;
+}
+
+.image ul {
+  padding: 0;
+}
+
+.image ul li {
+  display: inline;
+}
+
+.description {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: description;
+  padding-right: 1rem;
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.language-icon-size {
+  vertical-align: middle;
+  display: inline;
+}
+
+.language-icon-size img {
+  margin-left: 5px;
+}
+
+.seemore {
+  background-color: #383e42;
+  border-color: #343a40;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.seemore:hover {
+  background-color: #383e42ea;
+}
+
+.language {
+  display: inline;
+  margin-right: 1rem;
+}
+
+@media (max-width: 950px) {
+  .language {
+    margin-top: 1rem;
+    display: inline-block;
+  }
+}
+
+#technologies {
+  margin-top: 1em;
 }
 
 #contactform {
@@ -393,14 +504,16 @@ a.img-link {
   background-color: #383e42;
   border-color: #343a40;
   color: white;
-  padding: 7px 14px;
-  border: 1px solid transparent;
-  padding: 0.5rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 #contactform .btn:hover {

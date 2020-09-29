@@ -27,7 +27,7 @@
       </p>
     </header>
     <section class="darkrow">
-      <h2 class="heading_spaced">A little bit about me...</h2>
+      <h2 class="heading_spaced">A little about me...</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fuga illo animi voluptates maxime rerum asperiores, a voluptatem alias vero totam. Ex amet sint at esse repudiandae repellat reprehenderit numquam.
         At incidunt dolore veritatis assumenda! Labore suscipit est a, alias neque enim qui necessitatibus, ad excepturi nulla perspiciatis modi, corporis ipsam cupiditate tenetur doloribus sit minima reiciendis placeat consequuntur expedita!
         Quis adipisci rerum consectetur accusamus ut distinctio sequi laborum fugiat nihil pariatur? Ipsa voluptatum maxime reiciendis veniam, quod dolorum saepe non, consectetur quaerat, nemo obcaecati voluptatibus autem necessitatibus excepturi esse.</p>
@@ -64,20 +64,37 @@
     </section>
     <section id="myprojects">
       <h2 class="heading_spaced">Projects</h2>
-      <div class="project">
+      <div class="grid-container">
+        <div class="image"><img class="product_screengrab" src="img/projects/cf_full.png" alt="A screengrab of the website at https://www.cafefrederiksberg.dk/">
+          <div id="technologies">
+            <div class="language">
+              <img class="language-icon-size" src="img/language_icons/html5.svg" alt="Icon of HTML5">
+              <p class="language-icon-size">HTML5</p>
+            </div>
+            <div class="language">
+              <img class="language-icon-size" src="img/language_icons/css-3.svg" alt="Icon of CSS">
+              <p class="language-icon-size">CSS3</p>
+            </div>
+            <div class="language">
+              <img class="language-icon-size" src="img/language_icons/javascript.svg" alt="Icon of JavaScript">
+              <p class="language-icon-size">JavaScript</p>
+            </div>
+            <div class="language">
+              <img class="language-icon-size" src="img/language_icons/php.svg" alt="Icon of PHP">
+              <p class="language-icon-size">PHP</p>
+            </div>
+            <div class="language">
+              <img class="language-icon-size" src="img/language_icons/database.svg" alt="Icon of SQL">
+              <p class="language-icon-size">MySQL</p>
+            </div>
+          </div>
+        </div>
         <img class="company_logo" src="img/projects/cf_logo.svg" alt="The Company Logo of Café Frederiksberg">
-        <img class="product_screengrab" src="img/projects/cf_full.png" alt="A screengrab of the website at https://www.cafefrederiksberg.dk/">
-        <p>A small description of the project alongside a list of technologies used.</p>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-          <li>Adobe XD</li>
-          <li>Photoshop</li>
-        </ul>
-        <a href="https://github.com/simoneliasen/cafefrederiksberg" target="_blank">GitHub Link</a>
+        <div class="description">
+          <p>Project at Information Technology (IT) at Aalborg University for 1st Semester. A website created for a local business in Aalborg with a CMS established on the ground on requirements gathering and generation.
+            The goal was to make an IT-system that effectively communicated Café Frederiksbergs identity.</p>
+          <a class="seemore" href="https://github.com/simoneliasen/cafefrederiksberg" target="_blank">See More</a>
+        </div>
       </div>
       <div class="project">
         <h2>Yatzhee</h2>
