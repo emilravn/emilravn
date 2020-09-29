@@ -28,9 +28,6 @@
     </header>
     <section class="darkrow">
       <h2 class="heading_spaced">A little about me...</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio fuga illo animi voluptates maxime rerum asperiores, a voluptatem alias vero totam. Ex amet sint at esse repudiandae repellat reprehenderit numquam.
-        At incidunt dolore veritatis assumenda! Labore suscipit est a, alias neque enim qui necessitatibus, ad excepturi nulla perspiciatis modi, corporis ipsam cupiditate tenetur doloribus sit minima reiciendis placeat consequuntur expedita!
-        Quis adipisci rerum consectetur accusamus ut distinctio sequi laborum fugiat nihil pariatur? Ipsa voluptatum maxime reiciendis veniam, quod dolorum saepe non, consectetur quaerat, nemo obcaecati voluptatibus autem necessitatibus excepturi esse.</p>
       <div class="flexbox_skills">
         <div class="box-1">
           <h2 class="subject_title">Software Development</h2>
@@ -89,22 +86,27 @@
             </div>
           </div>
         </div>
-        <img class="company_logo" src="img/projects/cf_logo.svg" alt="The Company Logo of Café Frederiksberg">
         <div class="description">
+          <img class="company_logo" src="img/projects/cf_logo.svg" alt="The Company Logo of Café Frederiksberg">
           <p>Project at Information Technology (IT) at Aalborg University for 1st Semester. A website created for a local business in Aalborg with a CMS established on the ground on requirements gathering and generation.
             The goal was to make an IT-system that effectively communicated Café Frederiksbergs identity.</p>
           <a class="seemore" href="https://github.com/simoneliasen/cafefrederiksberg" target="_blank">See More</a>
         </div>
       </div>
-      <div class="project">
-        <h2>Yatzhee</h2>
-        <p>Instead of an image, put a video in here showing the demonstration of the program.</p>
-        <p>As part of an exam in Object Oriented Programming at Aalborg University; I was tasked with creating a Yatzhee console application. It was developed using OOP in C# with an effort on easily readible and maintable code. The game can be played single-player only and features all the necessary core concepts found in a game of real game of Yatzhee.</p>
-        <ul>
-          <li><code>C#</code></li>
-          <li><code>Object Oriented Programming</code></li>
-        </ul>
-        <a href="https://github.com/simoneliasen/cafefrederiksberg" target="_blank">GitHub Link</a>
+      <div class="grid-container">
+        <div class="image"><video autoplay class="product_screengrab" src="videos/yatzhee_demonstration.mp4" alt="A video of my Yatzhee program."></video>
+          <div id="technologies">
+            <div class="language">
+              <img class="language-icon-size" src="img/language_icons/csharp.svg" alt="Icon of HTML5">
+              <p class="language-icon-size">C#</p>
+            </div>
+          </div>
+        </div>
+        <div class="description">
+          <h2 class="company_logo">Yatzhee</h2>
+          <p>As part of an exam in Object Oriented Programming at Aalborg University; I was tasked with creating a Yatzhee console application. It was developed using OOP in C# with an effort on easily readible and maintable code. The game can be played single-player only and features all the necessary core concepts found in a game of real game of Yatzhee.</p>
+          <a class="seemore" href="https://github.com/emilravn/yatzhee" target="_blank">See More</a>
+        </div>
       </div>
     </section>
     <div id="contactform">

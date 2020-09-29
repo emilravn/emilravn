@@ -132,7 +132,7 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 50px 0px;
+  padding: 100px 0px;
 
   @media (max-width: 950px) {
     flex-direction: column;
@@ -263,9 +263,8 @@ a.img-link {
   height: 32px;
 }
 
-.company_logo {
-  max-width: 250px;
-  height: auto;
+#myprojects {
+  margin: 50px 0px;
 }
 
 .product_screengrab {
@@ -289,19 +288,14 @@ a.img-link {
   @media (max-width: 950px) {
     display: flex;
     flex-direction: column;
-
     .company_logo {
-      order: 1;
-      margin-bottom: 2em;
+      display: none;
     }
+  }
 
-    .image {
-      order: 2;
-    }
-
-    .description {
-      order: 3;
-    }
+  .company_logo {
+    max-width: 250px;
+    height: auto;
   }
 }
 .image {

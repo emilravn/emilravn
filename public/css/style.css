@@ -147,7 +147,7 @@ nav a:hover::before {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 50px 0px;
+  padding: 100px 0px;
 }
 
 @media (max-width: 950px) {
@@ -302,9 +302,8 @@ a.img-link {
   height: 32px;
 }
 
-.company_logo {
-  max-width: 250px;
-  height: auto;
+#myprojects {
+  margin: 50px 0px;
 }
 
 .product_screengrab {
@@ -338,21 +337,13 @@ a.img-link {
             flex-direction: column;
   }
   .grid-container .company_logo {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-bottom: 2em;
+    display: none;
   }
-  .grid-container .image {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .grid-container .description {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
+}
+
+.grid-container .company_logo {
+  max-width: 250px;
+  height: auto;
 }
 
 .image {
