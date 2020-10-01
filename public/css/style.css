@@ -91,7 +91,7 @@ nav ul li:first-child {
 }
 
 nav a {
-  font-size: 17px;
+  font-size: 1em;
   position: relative;
   color: #585858;
   text-decoration: none;
@@ -177,7 +177,7 @@ nav a:hover::before {
 }
 
 #intro_paragraph {
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.8;
   padding-left: 2em;
 }
@@ -191,6 +191,8 @@ nav a:hover::before {
 
 #intro_name {
   padding-left: 2em;
+  font-size: 1em;
+  color: #aaa;
 }
 
 .darkrow {
@@ -203,7 +205,7 @@ nav a:hover::before {
 }
 
 .heading_spaced {
-  font-size: 38px;
+  font-size: 2.5em;
   letter-spacing: 10px;
   font-weight: 300;
   text-transform: uppercase;
@@ -211,12 +213,12 @@ nav a:hover::before {
 }
 
 .subject_title {
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
 .paragraph_text {
-  font-size: 15px;
+  font-size: 0.9em;
   font-weight: 400;
   margin-left: 22px;
   padding: 0;
@@ -294,6 +296,8 @@ nav a:hover::before {
 }
 
 .grid-container {
+  -webkit-box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   margin-top: 2em;
   display: -ms-grid;
   display: grid;
@@ -350,7 +354,7 @@ nav a:hover::before {
   grid-area: description;
   padding-right: 1rem;
   line-height: 1.8;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 .language-icon-size {
@@ -372,7 +376,7 @@ nav a:hover::before {
   border: 1px solid transparent;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 0.9em;
 }
 
 .seemore:hover {
@@ -404,7 +408,7 @@ nav a:hover::before {
 }
 
 #contactform h1 {
-  font-size: 24px;
+  font-size: 1.8em;
 }
 
 #contactform .form-group {
@@ -486,7 +490,7 @@ nav a:hover::before {
   border: 1px solid transparent;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 0.9em;
 }
 
 #contactform .btn:hover {

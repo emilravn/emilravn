@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Emil Ravn's Portfolio Website showcasing projects and skills">
+  <!-- <link rel="icon" type="image/png" href="img/favicon.ico"> -->
   <title>Emil Ravn</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -27,7 +28,7 @@
           enjoys to build and explore using all sorts of technologies. Currently undergoing a Bachelor's Degree in Information
           Technology 5<sup>th</sup> semester at Aalborg University.
         </p>
-        <p id="intro_name"><cite>... Emil Ravn</cite></p>
+        <p id="intro_name">Emil Ravn</p>
       </div>
     </header>
     <section class="darkrow">
